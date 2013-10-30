@@ -1,0 +1,77 @@
+$column: 3.125%;
+
+h1 {
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  width: 75%;
+  display: block;
+  cursor: default;
+  // -webkit-transform: translate3d(0, 0, 0);
+  @media only screen and (max-width: 625px) {
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 45px;
+  letter-spacing: -1px;
+  margin: 10px 0;
+  cursor: default;
+  display: block;
+  // -webkit-transform: translate3d(0, 0, 0);
+  @media only screen and (max-width: 625px) {
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+}
+
+/* The cover container */
+#article-cover {
+  width: 100%;
+  height: 100%;
+  background-color: #151515;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  // -webkit-transform: translate3d(0, 0, 0);
+  /* The cover body text */
+  span {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 100px $column 50px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.66)));
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.66));
+    background-image:    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.66));
+    background-image:     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.66));
+    background-image:      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.66));
+    // -webkit-transform: translate3d(0, 0, 0);
+  }
+  /* The cover image */
+  img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #444;
+    border: none;
+    outline-width: 0;
+    box-shadow: none;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.12s;
+    // -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+

@@ -1,0 +1,110 @@
+$column: 3.126%;
+
+#article-body {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: $column * 4;
+  p,
+  ul,
+  h5 {
+    color: darken(#FFF, 70%);
+    display: block;
+    width: 100% - ($column * 4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $column * 6;
+    margin-bottom: $column * 6;
+    // text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    @media only screen and (max-width: 625px) {
+      width: 100% - ($column * 2);
+      max-width: 100%;
+    }
+    a {
+      height: 21px;
+    }
+    b {
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+  }
+  h5 {
+    margin-top: $column * 2;
+    margin-bottom: 0;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: $column * 2;
+    list-style-type: disc;
+    @media only screen and (max-width: 625px) {
+      margin-left: $column * 2 + 1;
+      width: 100% - ($column * 3 + 1);
+      max-width: 100%;
+    }
+  }
+  img {
+    display: block;
+    width: 100% - ($column * 8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $column * 2;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 625px) {
+      width: 100% - ($column * 2);
+    }
+    &+p {
+      color: darken(#FFF, 50%);
+      width: 100% - ($column * 8);
+      max-width: 290px;
+      text-align: left;
+      margin-left: $column * 4;
+      margin-top: 0;
+      margin-bottom: $column * 2;
+      padding-bottom: $column * 0.5;
+      font-size: 14px;
+      line-height: 18px;
+      @media only screen and (max-width: 625px) {
+        width: 100% - ($column * 2);
+        margin-left: $column * 1;
+        max-width: 100%;
+      }
+      a {
+        height: 16px;
+      }
+    }
+    &.full {
+      width: 100%;
+      @media only screen and (max-width: 625px) {
+        width: 100% - ($column * 2);
+      }
+      &+p {
+        margin-left: 10px;
+      }
+    }
+    &.portrait {
+      width: 100% - ($column * 18);
+      &+p {
+        margin-left: $column * 9;
+      }
+    }
+  }
+  p.break {
+    color: darken(#FFF, 70%);
+    margin-top: $column * 6;
+    margin-bottom: $column * 6;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    // text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 435px !important;
+    @media only screen and (max-width: 625px) {
+      max-width: 100% !important;
+    }
+    a {
+      height: 23px;
+    }
+  }
+}
+

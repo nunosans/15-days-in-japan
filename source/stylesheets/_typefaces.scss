@@ -1,0 +1,45 @@
+// Embed Meiji Sans.
+
+@font-face {
+  font-family: "Meiji Sans";
+  src: url('/typefaces/meiji-sans-book.eot');
+  src: url('/typefaces/meiji-sans-book.eot?#iefix') format('embedded-opentype'),
+       url('/typefaces/meiji-sans-book.woff') format('woff'),
+       url('/typefaces/meiji-sans-book.ttf')  format('truetype'),
+       url('/typefaces/meiji-sans-book.svg#1f22a7ff26562554f5409afd9c01c2d2') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: "Meiji Sans";
+  src: url('/typefaces/meiji-sans-book-italic.eot');
+  src: url('/typefaces/meiji-sans-book-italic.eot?#iefix') format('embedded-opentype'),
+       url('/typefaces/meiji-sans-book-italic.woff') format('woff'),
+       url('/typefaces/meiji-sans-book-italic.ttf')  format('truetype'),
+       url('/typefaces/meiji-sans-book-italic.svg#ac0abfd22f3af5e4ee3e9910996d250f') format('svg');
+  font-style:   italic;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: "Meiji Sans";
+  src: url('/typefaces/meiji-sans-bold.eot');
+  src: url('/typefaces/meiji-sans-bold.eot?#iefix') format('embedded-opentype'),
+       url('/typefaces/meiji-sans-bold.woff') format('woff'),
+       url('/typefaces/meiji-sans-bold.ttf')  format('truetype'),
+       url('/typefaces/meiji-sans-bold.svg#c71571a66774ab814a6fa943c55d8192') format('svg');
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: "Meiji Sans";
+  src: url('/typefaces/meiji-sans-bold-italic.eot');
+  src: url('/typefaces/meiji-sans-bold-italic.eot?#iefix') format('embedded-opentype'),
+       url('/typefaces/meiji-sans-bold-italic.woff') format('woff'),
+       url('/typefaces/meiji-sans-bold-italic.ttf')  format('truetype'),
+       url('/typefaces/meiji-sans-bold-italic.svg#758aa3be74b27523f599b1dbb0a28845') format('svg');
+  font-style:   italic;
+  font-weight:  700;
+}
