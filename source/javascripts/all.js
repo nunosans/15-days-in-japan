@@ -17,15 +17,30 @@ function fetchHighResolutionImages() {
 
   if (viewpirtWidth > 750) {
     if (isHighDensity || viewpirtWidth > 1500) {
-      $('img').each(function() {
-        var img = $(this);
-        img.attr('src', img.attr(largeImageSourceAttribue));
-      });
+
+      // If it's the retina iPad, you can't load large image assets.
+      if (navigator.userAgent.match(/iPad/i) != null) {
+
+        $('img').each(function() {
+          var img = $(this);
+          img.attr('src', img.attr(mediumImageSourceAttribute));
+        });
+
+      } else {
+
+        $('img').each(function() {
+          var img = $(this);
+          img.attr('src', img.attr(largeImageSourceAttribue));
+        });
+      }
+
     } else {
+
       $('img').each(function() {
         var img = $(this);
         img.attr('src', img.attr(mediumImageSourceAttribute));
       });
+
     }
   };
 
