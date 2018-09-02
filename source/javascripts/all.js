@@ -1,5 +1,3 @@
-//= require_tree .
-
 // Function to provide high-resolution images.
 function fetchHighResolutionImages() {
 
